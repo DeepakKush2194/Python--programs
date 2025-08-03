@@ -2,13 +2,6 @@
 #import random
 #print(f"Random number: {random.randint(1,100)}")
 
-#Calendar printer
-#import calendar 
-#year = int(input("Enter Year:"))
-#month = int(input("Enter month:"))
-#cal = calendar.month(year,month)
-#print(cal)
-
 #a = float(input("Enter a number: "))
 #if a > 0:
 #    print("Positive ")
@@ -24,28 +17,6 @@
 #else:
 #    print("Odd number ")
 
-#leap year  ???
-#year = int(input("Enter the year: "))
-#if year%100==0 and year%400==0:
-#    print(f"{year} is a leap year.")
-#elif year%100!=0 and year%4==0:
-#    print(f"{year} is leap year.")
-#else:
-#    print("Not a leap year.")
-
-#factorial
-#nterms = int(input("Enter number of terms: "))
-#factorial = 1
-#if nterms < 0:
-#    print("Factorial for negetive number is not possible ")
-#elif nterms == 0:
-#    print("Factorial is 1.")
-#else:
-#    for i in range(1,nterms + 1):
-#        factorial = factorial * i
-#    print(f"Factorial of {nterms} is equals to {factorial }.")
-
-
 #Sum of natural numbers 
 #limit = int(input("Enter the limit: "))
 #sum = 0
@@ -53,35 +24,3 @@
 #    sum += num
 #    
 #print(f"{sum} is the sum of {limit} natural numbers ")
-
-#basic calculator 
-def add(a, b):
-    return a + b
-def sub(a, b):
-    return a - b
-def multi(a, b):
-    return a * b
-def div(a, b):
-    return a / b
-
-print("Select one of the operation:")
-print("1. Addition")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
-
-while True:
-    choice = int(input("Enter your choice: "))
-    if choice in (1,2,3,4):
-        try:
-            x = int(input("Enter first number: "))
-            y = int(input("Enter first number: "))
-        except ValueError:
-            print("Invalid input, enter a number.")
-
-        if choice == 1:
-            print(x,"+",y,"=",add(x, y))
-        elif choice == 2:
-            print(x,"-",y,"=",sub(x, y))
-        elif choice == 3:
-            print(x,"-",y,"=",multi(x, y))
